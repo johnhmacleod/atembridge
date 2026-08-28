@@ -1,0 +1,18 @@
+{
+  "atem_ip": "192.168.168.111",
+  "superjoy_ip": "192.168.168.144",
+  "superjoy_port": 80,
+  "superjoy_group": 1,
+  "http_port": 8080,
+  "poll_interval": 0.05,
+  "http_timeout": 30,
+  "log_level": "INFO",
+  "camera_map": {
+    "1": 1,
+    "2": 2,
+    "3": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6
+  }
+}

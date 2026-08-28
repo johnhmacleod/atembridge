@@ -1,0 +1,19 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# systemd service unit (save as /etc/systemd/system/atem-superjoy.service)
+# ──────────────────────────────────────────────────────────────────────────────
+#
+[Unit]
+Description=ATEM -> PTZOptics SuperJoy bridge
+After=network-online.target
+Wants=network-online.target
+#
+[Service]
+ExecStart=/home/church/venv/bin/python /home/church/atem_superjoy_bridge.py
+WorkingDirectory=/home/church/atembridge
+Restart=always
+RestartSec=5
+User=church
+#
+[Install]
+WantedBy=multi-user.target
+#
